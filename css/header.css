@@ -1,0 +1,51 @@
+.logo {
+  color: #111;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+nav[aria-label="Primary menu"] {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 2rem;
+  font-size: 1rem;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #0078d7;
+}
+
+
+header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+}

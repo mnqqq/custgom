@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #222;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #0078d7;
+  margin-bottom: 2rem;
+}
+
+.product-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr; 
+}
+
+.product-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  position: relative;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-info {
+  flex: 1;
+}
+
+.channel-description {
+  font-size: 1rem;
+  color: #444;
+  margin: 0.5rem 0 1rem;
+}
+
+.product-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.more-info {
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.more-info:hover {
+  background-color: #005fa3;
+}
+
+.product-purchase {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #0078d7;
+  margin-bottom: 0.5rem;
+}
+
+.buy-button {
+  padding: 0.6rem 1.2rem;
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #005fa3;
+}
+
+.info-popup {
+  margin-top: 1rem;
+  background: #eef6ff;
+  padding: 0.8rem;
+  border-left: 4px solid #0078d7;
+  border-radius: 6px;
+}
+
+.hidden {
+  display: none;
+}
+
+.custom-request form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.custom-request input,
+.custom-request textarea {
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.custom-request button[type="submit"] {
+  background-color: #004a8f;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.custom-request button[type="submit"]:hover {
+  background-color: #003566;
+}

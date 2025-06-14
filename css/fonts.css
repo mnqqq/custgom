@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Wedgie';
+  src: url('../fonts/Wedgie Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.logo {
+  font-family: 'Wedgie', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.primary-font{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
