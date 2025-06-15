@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const description = form.description.value.trim();
 
       if (!name || !telegram || !description) {
-        alert('Будь ласка, заповніть усі поля.');
+        alert('Please fill in all fields.');
         return;
       }
 
@@ -22,11 +22,11 @@ document.addEventListener('DOMContentLoaded', () => {
           createdAt: new Date()
         });
 
-        alert('Ваш запит успішно надіслано!');
+        alert('Your request has been successfully submitted!');
         form.reset();
       } catch (err) {
-        console.error('Помилка:', err);
-        alert('Не вдалося надіслати запит. Спробуйте пізніше.');
+        console.error('Error:', err);
+        alert('Failed to submit the request. Please try again later.');
       }
     });
   }
